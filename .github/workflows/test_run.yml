@@ -1,4 +1,4 @@
-name: Automation tests
+name: Automation test
 
 on:
   workflow_dispatch:
@@ -21,7 +21,7 @@ jobs:
       - name: setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.10"
       - name: Install Chrome
         run: sudo apt-get install google-chrome-stable
       - name: install dependencies
